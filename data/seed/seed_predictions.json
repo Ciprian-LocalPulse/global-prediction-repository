@@ -1,0 +1,122 @@
+[
+  {
+    "domain": "climate_environment",
+    "hypothesis": "Global mean surface temperature for calendar year 2027 will exceed 1.5C above the 1850-1900 pre-industrial baseline.",
+    "resolution_criteria": "Resolves True if the WMO's annual State of the Global Climate report for 2027 states the global mean surface temperature anomaly exceeded 1.5C relative to the 1850-1900 baseline. Resolves False otherwise.",
+    "resolution_date_days_from_now": 540,
+    "probability_estimate": 38,
+    "rationale": "2024 and several months of 2025 already touched or exceeded 1.5C on a monthly basis under El Nino conditions, but a full calendar-year average above 1.5C is a higher bar, and current ENSO forecasts suggest neutral-to-La-Nina conditions through parts of 2027, which tends to cool the global average slightly."
+  },
+  {
+    "domain": "climate_environment",
+    "hypothesis": "Arctic sea ice minimum extent in September 2027 will fall below 4.0 million square kilometers.",
+    "resolution_criteria": "Resolves True if the NSIDC September monthly average sea ice extent for 2027 is below 4.0 million km^2. Resolves False otherwise.",
+    "resolution_date_days_from_now": 500,
+    "probability_estimate": 45,
+    "rationale": "The record low was 3.39 million km^2 in September 2012; recent years have mostly ranged between 4.0 and 4.9 million km^2, so this depends on whether a particularly warm melt season occurs."
+  },
+  {
+    "domain": "climate_environment",
+    "hypothesis": "At least one Atlantic hurricane will reach Category 5 intensity during the 2026 season.",
+    "resolution_criteria": "Resolves True if the National Hurricane Center's official post-season report for the 2026 Atlantic season lists at least one storm that reached 1-minute sustained winds of 157 mph (252 km/h) or higher. Resolves False otherwise.",
+    "resolution_date_days_from_now": 150,
+    "probability_estimate": 62,
+    "rationale": "Roughly two-thirds of the last fifteen Atlantic seasons have produced at least one Category 5 storm, and current sea surface temperature anomalies in the main development region are running warm."
+  },
+  {
+    "domain": "public_health",
+    "hypothesis": "The WHO will not declare a new Public Health Emergency of International Concern (PHEIC) for any novel pathogen before January 1, 2028.",
+    "resolution_criteria": "Resolves True if no new PHEIC declaration for a previously undeclared pathogen appears in the WHO's official PHEIC history by January 1, 2028. An extension or continuation of an existing PHEIC does not count against this prediction.",
+    "resolution_date_days_from_now": 520,
+    "probability_estimate": 55,
+    "rationale": "PHEIC declarations are relatively rare events historically (roughly one every 1-3 years since 2009), so the base rate for a novel one appearing within any given 18-month window is moderate but not high."
+  },
+  {
+    "domain": "public_health",
+    "hypothesis": "Global reported measles cases in 2026 will exceed 2024 levels.",
+    "resolution_criteria": "Resolves True if the WHO's global measles case count for calendar year 2026, as published in its surveillance data, exceeds the confirmed 2024 total. Resolves False otherwise.",
+    "resolution_date_days_from_now": 460,
+    "probability_estimate": 58,
+    "rationale": "Vaccination coverage gaps that opened during the pandemic era have been slow to close in several regions, and 2024 already showed a resurgence trend in multiple countries."
+  },
+  {
+    "domain": "public_health",
+    "hypothesis": "At least one mRNA-based therapeutic for a non-infectious disease (e.g., cancer, autoimmune condition) will receive full FDA approval before the end of 2027.",
+    "resolution_criteria": "Resolves True if the FDA's approved drug database lists a full (non-emergency, non-accelerated-only) approval for an mRNA-based product indicated for a non-infectious disease before December 31, 2027.",
+    "resolution_date_days_from_now": 520,
+    "probability_estimate": 34,
+    "rationale": "Several mRNA cancer vaccine candidates are in late-stage trials with encouraging interim results, but full approval (as opposed to breakthrough therapy designation or accelerated approval) typically takes longer than current trial timelines suggest."
+  },
+  {
+    "domain": "ai_tech_risk",
+    "hypothesis": "No AI lab will publicly claim to have achieved artificial general intelligence, as defined by passing a broad battery of human-level cognitive benchmarks across language, vision, and reasoning, before the end of 2028.",
+    "resolution_criteria": "Resolves False if a lab widely recognized as a frontier developer (member of the Frontier Model Forum or equivalent) makes a public claim of this kind that is not retracted within 30 days. Resolves True otherwise.",
+    "resolution_date_days_from_now": 900,
+    "probability_estimate": 70,
+    "rationale": "Capability gains have been rapid, but 'AGI' claims to date have consistently been walked back or heavily qualified once scrutinized, and there is no broadly agreed benchmark suite that labs have committed to being bound by."
+  },
+  {
+    "domain": "ai_tech_risk",
+    "hypothesis": "A cryptographically relevant quantum computer (capable of breaking RSA-2048 in a practical timeframe) will not exist by the end of 2030.",
+    "resolution_criteria": "Resolves True if no peer-reviewed publication or credible industry disclosure by December 31, 2030 demonstrates factoring of a 2048-bit RSA modulus using a quantum algorithm. Resolves False otherwise.",
+    "resolution_date_days_from_now": 1600,
+    "probability_estimate": 82,
+    "rationale": "Current error-correction overhead and qubit counts remain orders of magnitude below most expert estimates of what's needed for this milestone, based on published NIST and academic roadmaps."
+  },
+  {
+    "domain": "ai_tech_risk",
+    "hypothesis": "At least one G7 country will pass binding (not voluntary) national legislation specifically regulating frontier AI model development before the end of 2027.",
+    "resolution_criteria": "Resolves True if a G7 national legislature passes and enacts a law with binding compliance obligations (not a voluntary code of conduct) specifically targeting frontier/general-purpose AI model developers, before December 31, 2027.",
+    "resolution_date_days_from_now": 520,
+    "probability_estimate": 64,
+    "rationale": "The EU AI Act is already in force and several other G7 members have active legislative proposals; this mostly hinges on whether at least one of them crosses the finish line in the given window rather than whether the trend exists at all."
+  },
+  {
+    "domain": "resource_management",
+    "hypothesis": "Global average crop yields for wheat will decline year-over-year in 2027 due to climate-related factors.",
+    "resolution_criteria": "Resolves True if the USDA's global wheat production estimate for the 2027 marketing year is lower than the 2026 marketing year, and the accompanying report attributes a meaningful share of the decline to weather or climate factors.",
+    "resolution_date_days_from_now": 540,
+    "probability_estimate": 28,
+    "rationale": "Wheat yields have generally trended upward globally due to agronomic improvements even amid regional climate shocks, so a global year-over-year decline attributable specifically to climate factors is a relatively high bar."
+  },
+  {
+    "domain": "resource_management",
+    "hypothesis": "At least one major metropolitan area (population over 5 million) will implement mandatory water rationing for more than 30 consecutive days before the end of 2027.",
+    "resolution_criteria": "Resolves True if credible news reporting and/or municipal government sources confirm mandatory (not voluntary) water rationing lasting more than 30 consecutive days in a metro area of 5 million or more, before December 31, 2027.",
+    "resolution_date_days_from_now": 520,
+    "probability_estimate": 47,
+    "rationale": "Several large cities (Mexico City, Cape Town's earlier near-miss, parts of India) have come close to or crossed this threshold in recent years, and water stress trends in several major basins continue to worsen."
+  },
+  {
+    "domain": "resource_management",
+    "hypothesis": "Global installed solar photovoltaic capacity will surpass 3 terawatts cumulative by the end of 2026.",
+    "resolution_criteria": "Resolves True if the IEA's or IRENA's published cumulative global solar PV capacity figure for end of 2026 exceeds 3,000 GW. Resolves False otherwise.",
+    "resolution_date_days_from_now": 400,
+    "probability_estimate": 71,
+    "rationale": "Cumulative capacity passed roughly 2 TW in 2024 and annual additions have been running well above 400 GW per year, so this is mostly a question of whether the current growth rate holds rather than whether the milestone is plausible at all."
+  },
+  {
+    "domain": "geopolitical_stability",
+    "hypothesis": "No new interstate armed conflict involving direct military engagement between two or more UN member states will begin in 2027.",
+    "resolution_criteria": "Resolves False if a recognized conflict-tracking body (e.g., Uppsala Conflict Data Program) records a new interstate armed conflict beginning in calendar year 2027. Resolves True otherwise.",
+    "resolution_date_days_from_now": 540,
+    "probability_estimate": 60,
+    "rationale": "New interstate (as opposed to intrastate/civil) conflicts are historically rarer than commonly assumed, based on UCDP's own historical base rates, even though intrastate conflict and instability remain elevated in several regions."
+  },
+  {
+    "domain": "geopolitical_stability",
+    "hypothesis": "Global semiconductor supply chains will experience at least one disruption in 2027 causing a reported price increase of 10% or more for a major chip category.",
+    "resolution_criteria": "Resolves True if a major industry analyst (e.g., Gartner, TrendForce, IDC) reports a 10%+ quarter-over-quarter price increase for a major semiconductor category (e.g., DRAM, NAND, logic) attributed to a supply disruption during 2027.",
+    "resolution_date_days_from_now": 540,
+    "probability_estimate": 51,
+    "rationale": "Export controls, geographic concentration of advanced fabrication capacity, and periodic demand shocks (AI accelerator demand in particular) have made this category prone to price volatility in most recent years."
+  },
+  {
+    "domain": "geopolitical_stability",
+    "hypothesis": "At least one additional country will formally apply for European Union membership before the end of 2028.",
+    "resolution_criteria": "Resolves True if the European Council's official list of candidate and applicant countries includes at least one new applicant, beyond the current list, before December 31, 2028.",
+    "resolution_date_days_from_now": 900,
+    "probability_estimate": 30,
+    "rationale": "The current candidate pipeline is already fairly full, and the accession process itself has become slower and more politically contested in recent years, which reduces the incentive for new applicants in the near term."
+  }
+]
