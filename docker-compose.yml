@@ -1,0 +1,34 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: gpr_user
+      POSTGRES_PASSWORD: gpr_password
+      POSTGRES_DB: gpr_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - gpr_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gpr_user -d gpr_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://gpr_user:gpr_password@db:5432/gpr_db
+      SECRET_KEY: dev-only-secret-change-in-production
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+
+volumes:
+  gpr_postgres_data:
