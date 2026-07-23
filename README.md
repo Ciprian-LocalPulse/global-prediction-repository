@@ -1,5 +1,5 @@
 # Global Prediction Repository (GPR)
-
+![Global Prediction Repository](assets/global_prediction.png)
 An open, auditable ledger of falsifiable predictions across the domains that
 shape the next decade — climate, public health, artificial intelligence,
 resource security, and geopolitical stability. The GPR exists because most
